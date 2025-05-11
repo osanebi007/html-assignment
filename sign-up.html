@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create an account</title>
+    <style>
+        .summit{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>personal information</legend>
+            <ul>
+                <li>
+                    <label for="fullname">fullname</label>
+                    <input type="text" name="name" id="fullname" required>
+                </li>
+                <li>
+                    <label for="email">email address</label>
+                    <input type="email" name="email" id="email" required>
+                </li>
+                <li>
+                    <label for="phone">phone number</label>
+                    <input type="tel" name="tel" id="phone" placeholder="enter your phone number">
+                </li>
+                <li>
+                    <span>gender</span> <br>
+                    <input type="radio" name="gender" id="male">
+                    <label for="male">male</label>
+                    <br>
+                    <input type="radio" name="gender" id="female">
+                    <label for="female">female</label>
+                </li>
+                <li>
+                    <span>marital status</span> <br>
+                    <input type="radio" name="marital_status" id="married">
+                    <label for="married">married</label>
+                    <br>
+                    <input type="radio" name="marital_status" id="single">
+                    <label for="single">single</label>
+                    <br>
+                    <input type="radio" name="marital_status" id="divorced">
+                    <label for="divorced">divorced</label>
+                    <br>
+                    <input type="radio" name="marital_status" id="widow">
+                    <label for="widow">widow</label>
+                </li>
+                <li>
+                    <label for="residence">residential address</label>
+                    <input type="text" name="address" id="residence" maxlength="20">  
+                    <br>
+                    <label for="dob">date of birth</label>
+                    <input type="date" name="dob" id="dob" title="date of birth" required>
+                </li>
+                <li>
+                    <label for="state">state of origin</label>
+                    <select name="state" id="state" title="state of origin">
+                        <optgroup label="south east">
+                        <option value="ab">abia</option>
+                        <option value="an">anambra</option>
+                        <option value="eb">ebonyi</option>
+                        <option value="en">enugu</option>
+                        <option value="im">imo</option>
+                    </optgroup>
+                    <optgroup>
+                        <optgroup label="south south">
+                            <option value="ai">akwa ibom</option>
+                            <option value="bay">bayelsa</option>
+                            <option value="cr">cross river</option>
+                            <option value="del">delta</option>
+                            <option value="edo">edo</option>
+                            <option value="riv">rivers</option>
+                    </optgroup>
+                    <optgroup>
+                        <optgroup label="south west">
+                            <option value="eki">ekiti</option>
+                            <option value="lag">lagos</option>
+                            <option value="og">ogun</option>
+                            <option value="ond">ondo</option>
+                            <option value="os">osun</option>
+                            <option value="oyo">oyo</option>
+                    </optgroup>
+                    <optgroup>
+                        <optgroup label="north central">
+                            <option value="ben">benue</option>
+                            <option value="kog">kogi</option>
+                            <option value="kwa">kwara</option>
+                            <option value="nas">nasarawa</option>
+                            <option value="nig">niger</option>
+                            <option value="pla">plateau</option>
+                            <option value="fct">abuja</option>
+                    </optgroup>
+                    <optgroup>
+                        <optgroup label="north west">
+                            <option value="jig">jigawa</option>
+                            <option value="kad">kaduna</option>
+                            <option value="kan">kano</option>
+                            <option value="kat">katsina</option>
+                            <option value="keb">kebbi</option>
+                            <option value="sok">sokoto</option>
+                            <option value="zam">zamfara</option>
+                    </optgroup>
+                    <optgroup>
+                        <optgroup label="north east">
+                            <option value="ada">adamawa</option>
+                            <option value="bau">bauchi</option>
+                            <option value="bor">borno</option>
+                            <option value="gom">gombe</option>
+                            <option value="tar">taraba</option>
+                            <option value="yob">yobe</option>
+                 </optgroup>
+                    </select>
+                </li>
+                <li>
+                    <p>religion</p>
+                    <input type="radio" name="religion" id="christian">
+                    <label for="christian">christian</label><br>
+
+                    <input type="radio" name="religion" id="muslim">
+                    <label for="muslim">muslim</label><br>
+
+                    <input type="radio" name="religion" id="traditionalist">
+                    <label for="traditionalist">traditionalist</label><br>
+
+                    <input type="radio" name="religion" id="atheist">
+                    <label for="atheist">atheist</label><br>
+                </li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>professional data</legend>
+            <ul>
+                <li>
+                    <p>health records</p>
+                    <input type="checkbox" name="health" id="heart">
+                    <label for="heart">heart issue</label>
+
+                    <input type="checkbox" name="health" id="diabetic">
+                    <label for="diabetic">diabetic</label>
+
+                    <input type="checkbox" name="health" id="asthma">
+                    <label for="asthma">asthma</label>
+
+                    <input type="checkbox" name="health" id="visual_impediment">
+                    <label for="visual_impediment">visual impediment</label>
+                </li>
+                <li>
+                    <label for="resume">upload your resume</label>
+                    <input type="file" name="resume" id="resume" accept=".pdf,.docx" multiple>
+                </li>
+                <li>
+                    <label for="portfolio">portfolio</label>
+                    <input type="url" name="web" id="portfolio">
+                </li>
+                <li>
+                    <label for="exp">years of experience</label>
+                    <input type="number" name="number" id="exp" min="2" max="10">
+                </li>
+                <li>
+                    <label for="pwd">create password</label>
+                    <input type="password" name="pwd" id="pwd">
+                </li>
+                <li>
+                    <label for="desc">describe yourself in nothing less than 150 words</label><br>
+                    <textarea name="desc" id="desc" cols="50" rows="12"></textarea>
+                </li>
+            </ul>
+        </fieldset>
+        <input type="submit" name="submit" value="create account">
+        <button type="reset">reset account</button>
+        <div></div>
+    </form>
+</body>
+</html>
