@@ -49,11 +49,6 @@ section:nth-of-type(7){
 }
 section:nth-of-type(8){
     background-color: red;
-    display: flex;
-    width: 300px;
-    height: 150px;
-    margin: 30px;
-    border: 1px solid rgb(5, 5, 5);
     background-image: url(./media/yellow-christmas-star-png-18.png), url(./media/yellow-christmas-star-png-18.png), url(./media/yellow-christmas-star-png-18.png), url(./media/yellow-christmas-star-png-18.png), url(./media/yellow-christmas-star-png-18.png);
     background-repeat: no-repeat;
     background-position: 20px 20px ,8px 30px, 170px 70px ,120px  140px, 170p 70px;
